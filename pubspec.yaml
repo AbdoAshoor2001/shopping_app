@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   firebase_core: ^2.15.1
+  smooth_page_indicator: ^1.1.0
   flutter:
     sdk: flutter
 
