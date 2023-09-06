@@ -3,7 +3,7 @@ class OnBoardingModel {
   final String subtitle;
   final String image;
   final String salary;
-  final bool? changeButton;
+  final bool changeButton;
 
   OnBoardingModel({
     required this.title,

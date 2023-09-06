@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shopping_app/On_Boarding/cubit.dart';
 
 import 'On_Boarding/page_view.dart';
 
@@ -11,14 +13,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Shopping',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => CubitOnboarding()),
+      ],
+      child: MaterialApp(
+        title: 'Shopping',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        debugShowCheckedModeBanner: false,
+        builder: (context, child) => SafeArea(child: child!),
+        home:const PageViewOnBoarding(),
       ),
-      debugShowCheckedModeBanner: false,
-      builder: (context, child) => SafeArea(child: child!),
-      home:const PageViewOnBoarding(),
     );
   }
 }
