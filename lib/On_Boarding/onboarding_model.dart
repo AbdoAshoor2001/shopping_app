@@ -17,7 +17,7 @@ class OnBoardingModel {
 List<OnBoardingModel> onBoardingModel = [
   OnBoardingModel(
     title: 'Gülçehre İbrik \n Limited Edition',
-    image: 'assets/images/Gulcehre_ibrik.png',
+    image: 'assets/images/Gulcehre.png',
     salary: '€5650',
     subtitle: 'history Culture glass',
     changeButton: true,
@@ -31,7 +31,7 @@ List<OnBoardingModel> onBoardingModel = [
   ),
   OnBoardingModel(
     title: 'Mystical Vase\nLimited Edition',
-    image: 'assets/images/MysticalVase.png',
+    image: 'assets/images/KavukVase.png',
     salary: '€3150',
     subtitle: 'history Culture glass',
     changeButton: false,
